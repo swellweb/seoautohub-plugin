@@ -8,7 +8,7 @@ description: Run or read a SEO Automation Hub audit for a site, then apply the p
 Reply in the user's language.
 
 1. Call `list_sites`. If several, ask which one; match the project's domain when obvious.
-2. If the site has never been audited or the user asked for a fresh one, call `run_audit` (needs a `write` token). Audits take minutes: re-check `list_sites` until `status` is no longer `processing`. If it returns "already running", just wait; never start a second one.
+2. If the site has never been audited or the user asked for a fresh one, call `run_audit` (needs a `write` token). Audits can take from minutes to about an hour on large sites: re-check `list_sites` every few minutes, report `progress` (percent) and `processed_pages`/`total_pages` to the user, and continue only when `status` is no longer `processing`. If it returns "already running", just wait; never start a second one.
 3. Call `list_suggestions` with `status: pending`. Work through them by `impressions`, highest first.
 4. For each suggestion: find the page in the project (route, template, CMS field, or markdown front matter matching `url`). Show the user the current vs `suggested_title`, `suggested_h1`, `suggested_meta_description` and the `reasoning`. Apply the change only after the user agrees, or when they said to apply all.
 5. Never invent text beyond the suggestion. If the suggestion does not fit the page's real content, say so and skip it.
