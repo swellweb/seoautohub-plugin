@@ -9,5 +9,6 @@
       "source": "./",
       "description": "SEO Automation Hub for AI IDEs: read prioritised SEO suggestions, mark what you changed, have the live page verified and see the measured click change from Search Console."
     }
-  ]
+  ],
+  "description": "SEO Automation Hub for AI IDEs: suggestions, live-page verification and measured results from Search Console."
 }
