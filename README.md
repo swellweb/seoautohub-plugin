@@ -14,7 +14,7 @@ Other SEO connectors give your agent data to read. This one lets it close the lo
 See `connect/` for your client. Short version for Claude Code:
 
 ```
-/plugin marketplace add seoautohub/seoautohub-plugin
+/plugin marketplace add swellweb/seoautohub-plugin
 /plugin install seoautohub@seoautohub
 ```
 

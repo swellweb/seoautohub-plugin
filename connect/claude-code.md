@@ -10,7 +10,7 @@ export SEOAUTOHUB_TOKEN="paste-your-token"
 3. Install the plugin (skills + MCP together):
 
 ```
-/plugin marketplace add seoautohub/seoautohub-plugin
+/plugin marketplace add swellweb/seoautohub-plugin
 /plugin install seoautohub@seoautohub
 ```
 
