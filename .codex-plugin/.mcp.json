@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "seoautohub": {
+      "type": "http",
+      "url": "https://seoautohub.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SEOAUTOHUB_TOKEN}"
+      }
+    }
+  }
+}

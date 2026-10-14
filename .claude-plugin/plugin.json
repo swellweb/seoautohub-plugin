@@ -1,0 +1,18 @@
+{
+  "name": "seoautohub",
+  "version": "1.0.0",
+  "description": "SEO Automation Hub for AI IDEs: read prioritised SEO suggestions, mark what you changed, have the live page verified and see the measured click change from Search Console.",
+  "author": {
+    "name": "SEO Automation Hub",
+    "url": "https://seoautohub.com"
+  },
+  "homepage": "https://seoautohub.com",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "search-console",
+    "mcp",
+    "geo",
+    "audit"
+  ]
+}
