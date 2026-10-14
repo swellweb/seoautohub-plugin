@@ -46,7 +46,7 @@ for s in skills:
     if fm:
         need(fm.group(1) == s.parent.name, f"{s}: name != cartella")
     used = set(re.findall(r"`([a-z_]+)`", txt)) & {t for t in re.findall(r"`([a-z_]+)`", txt) if "_" in t}
-    unknown = used - TOOLS - {"site_id", "suggestion_id", "focus_query", "suggested_title", "suggested_h1", "suggested_meta_description", "status", "processed_pages", "total_pages"}
+    unknown = used - TOOLS - {"site_id", "suggestion_id", "focus_query", "suggested_title", "suggested_h1", "suggested_meta_description", "status", "processed_pages", "total_pages", "ai_pages"}
     need(not unknown, f"{s}: tool/campi sconosciuti {unknown}")
     need(re.search(r"mark_suggestion_done", txt) is None or "write" in txt, f"{s}: cita azioni senza spiegare lo scope write")
 
